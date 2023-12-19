@@ -1,0 +1,17 @@
+.addtobag{
+  border: 0px;
+  background-color: limegreen;
+  border-radius: 5px;
+}
+
+.move{
+  border: solid 1px;
+  background-color: wheat;
+  border-radius: 5px;
+}
+
+.add1{
+  border: 0px;
+  background-color: limegreen;
+  border-radius: 5px;
+}

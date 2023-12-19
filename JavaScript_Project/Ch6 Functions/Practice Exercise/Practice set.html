@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function even_odd(number){
+      if (number % 2 === 0){
+        console.log(`Number ${number} is even`)
+      }else{
+        console.log(`Number ${number} is odd`)
+      }
+    }
+    even_odd(6)
+    function large_number(number_1, number_2){
+      if (number_1>number_2){
+        console.log(`${number_1} is bigger number`)
+      }else if (number_2>number_1){
+        console.log(`${number_2} is bigger number`)
+      }
+    }
+    large_number(89,9)
+    function c_to_f(number){
+      let c = number;
+      let f;
+      f = (9/5)* c + 32;
+      console.log(`${number} degree celsius in fehrenheit is ${f}`);
+    }
+    c_to_f(99)
+  </script>
+</body>
+</html>

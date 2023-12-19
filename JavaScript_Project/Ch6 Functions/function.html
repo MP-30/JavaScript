@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let age;
+    function printage(age){
+      console.log(`Yor age is ${age}`)  
+    }
+    printage(856);
+
+    function generateRandomMove(){
+      let random = Math.random();
+      let randomMove = random *3;
+      return randomMove;
+    }
+    console.log(generateRandomMove());
+
+    function determineDriveStatus(){
+      let age = 1;
+      let status;
+      if (age > 18){
+        status = 'You can drive';
+      }else {
+        status= 'Use a Bicycle';
+      }
+      return status;
+    }
+    console.log(determineDriveStatus());
+
+    function sum(a,b){
+      let sum =  a + b;
+      return sum;
+    }
+    
+    let num = sum(4,15);
+    console.log(num);
+    console.log(sum(14,15));
+    console.log(sum(14,157));
+    console.log(sum(-124,15));
+    console.log(sum(154,815));
+    console.log(sum(914,135));
+
+    function greeting (name = 'Aditya'){
+      console.log (`Namaste ${name} uncle`);
+    }
+    greeting('Pyaare');
+
+  </script>
+</body>
+</html>
