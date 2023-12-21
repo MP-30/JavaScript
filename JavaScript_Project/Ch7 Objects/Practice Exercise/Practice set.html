@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let product ={
+      name : 'Jeans',
+      size : 'S',
+      fit: 'Slim Fit',
+      'delivery-time': 'Monday-evening',
+    };
+    console.log(product) 
+
+    let copy_product = product;
+    copy_product.size = 'M';
+
+    console.log(product);
+    copy_product.fit = 'Regular Fit';
+    console.log(product);
+
+    console.log(product['delivery-time'])
+
+    let for_destructure = {
+      message:'good job',
+      status:'complete',
+    };
+    let {message, status}= for_destructure;
+    console.log(message, status);
+    
+    
+    function isIndenticalProduct(product1, product2){
+      
+      if (typeof product1 !== 'object' || typeof product2 !== 'object'){
+        console.warn('Paramenter passed was not an object');
+        return false;
+      }
+      if (product1 == product2){
+        return true;
+      }
+      if (product1.name === product2.name && 
+      product1.size === product2.size &&
+      product1.fit === product2.fit ){
+        return true;
+      }else{
+        return false;
+      }
+    }
+    let product0 ={
+      name : 'Jeans',
+      size : 'S',
+      fit: 'Slim Fit',
+      'delivery-time': 'Monday-evening',
+    };
+
+    let product4 ={
+      name : 'Jeans',
+      size : 'S',
+      fit: 'Slim Fit',
+      'delivery-time': 'Monday-evening',
+    };
+    console.log(isIndenticalProduct(product, product0));
+    console.log(isIndenticalProduct(product, product));
+    console.log(isIndenticalProduct(product, ''));
+    console.log(isIndenticalProduct(product4, product0));
+    console.log(isIndenticalProduct(product0, product4));
+
+  </script>
+</body>
+</html>
