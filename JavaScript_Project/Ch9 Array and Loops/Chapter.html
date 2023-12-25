@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Array</title>
+</head>
+<body>
+  <script> 
+    let obj = {ds:45}
+    let numbres = [1,2,3,6,9,85,7,48,6,5];
+    console.log(numbres);
+    console.log(numbres.length);
+    console.log(numbres[2]);
+    let doorsa = [1,'ds',5,'d3s'];
+    console.log(doorsa[3])
+    console.log(typeof doorsa)
+    console.log(Array.isArray(doorsa))
+    console.log(Array.isArray(obj))
+
+    let arr = [1,2,3];
+    console.log(arr);
+    arr.push(6);
+    console.log(arr);
+    let popped = arr.pop();
+    console.log(popped)
+    console.log(arr)
+
+    let arr1 = [3,5,7,9];
+    console.log(arr1)
+    arr1.splice(2,3);
+    console.log(arr1)
+
+
+    let arr2 = [5,9,6,8,4,7];
+    arr2.sort();
+    console.log(arr2);
+    console.log(arr2.toString())
+    arr2.valueOf()
+    console.log(arr2);
+    
+    let arr3 = arr2;
+    arr3[0] = 589;
+    console.log(arr3)
+    console.log(arr2)
+
+    let [a,b,c,d] = arr2;
+    console.log(a + " " + b + ' ' + c + " " + d)
+  </script>
+</body>   
+</html>
