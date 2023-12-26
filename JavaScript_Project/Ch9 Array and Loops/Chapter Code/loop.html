@@ -3,11 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Loops</title>
 </head>
 <body>
   <script>
+    /*
+    let num = 1; // Initialization
+    while (num <= 10000){
+      console.log(num);
+      num++;
+    }
+    console.log(`Final value of number ${num}`)
     
+    let x = 0;
+    while (x < 1){
+      console.log(x);
+      x = Math.random() * 1.5;
+    }
+    console.log(`Final value of number ${num}`)
+    
+    let num = 0;
+    do {
+      console.log(num);
+      num++;
+    } while(num <68346);
+    
+
+    for(let num =0; num <=10; num ++){
+      console.log(num);
+    }
+    
+
+    let nums = [4,89,6,7,8,2,36,45]
+    for( let index= 0 ; index < nums.length; index++){
+      console.log(nums[index])
+    }
+    
+
+    let nums = [4,8,6,59,7,5,6,1]
+    let sum = 0;
+    for (let i = 0; i<nums.length ; i++){
+       sum = sum + nums[i]
+       console.log(sum)
+    }
+    console.log(`Total of number is ${sum}`)
+
+    let square = [];
+    for (let i = 0; i<nums.length ; i++){
+      square.push(nums[i] * nums[i]); 
+      console.log(square[i])
+   }
+   console.log(square )
+   
+   for (let i = 0; i <50 ; i ++){
+    
+    if (i == 29){
+      break;
+    }
+    console.log(i)
+   }
+   
+
+   let arr = [5,8,9,7,5,6,2,6,3,6,8,7,4,1,58,0,3,6,8,5,6,2]
+   for (let i = 0; i <= arr.length ; i ++){
+    if (arr[i] === 58){
+      console.log(`Yeah!! succesfully found number ${arr[i]}`)
+      break;
+    }
+   }
+   */
+  
+   for (let i = 1; i <= 25; i++){
+    if (i % 2 === 0){
+      continue;
+    }
+    console.log(i);
+  }
+
   </script>
 </body>
 </html>
