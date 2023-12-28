@@ -26,14 +26,59 @@
 
     let arr2 = [4,5,6,7]
     function arrCopy (arr){
-      return arr.slice(0, arr.length-1)
+      return arr.slice(0, arr.length+1)
     }
     console.log(arrCopy(arr2))     
-    console.log(arr3)
+    //console.log(arr3)
 
     /*------*/
 
-    
+
+    function isPrime(num){
+       for (let i = 2; i< num; i++){
+        if (num % i ===0){
+          return (false);  
+        } 
+      }
+        return (true);
+  }
+    let toCheckNextPrime;
+    let count =0;
+    function next5Prime(toCheckNextPrime){
+    while(count <5){
+      
+      if(isPrime(toCheckNextPrime)){
+        console.log(`${toCheckNextPrime} is a prime number. This is number ${count+1}`)
+        count++;
+        
+      }toCheckNextPrime++;
+    }
+  }
+  next5Prime(4)
+
+   /*------*/
+
+   for (let i = 10; i>0; i--){
+    console.log(i)
+   }
+
+   /*------*/
+
+    let arr3 = [1,-6,5,7,-98]
+    for(let i =0; i<=(arr3.length) -1; i++){
+      if(arr3[i]<0) continue;       
+      console.log(arr3[i]);
+      }
+      
+    /*------*/
+
+    let arr4 = ['I', 'am', 'a' ,'softwer Developer.','I', 'want', 'to', 'become', 'a', 'fullstack', 'developer']
+
+    let result ='';
+    for (let p = 0; p<=arr4.length; p++){
+      result = result+ arr4[p] + ' ';
+    }
+    console.log(result)
   </script>
 </body>
 </html>
